@@ -1,10 +1,10 @@
 function start() { // Inicio da função start()
 
-	$("#inicio").hide();
+	$("#start").hide();
 	
-	$("#fundoGame").append("<div id='jogador'></div>");
-	$("#fundoGame").append("<div id='inimigo1'></div>");
-	$("#fundoGame").append("<div id='inimigo2'></div>");
-	$("#fundoGame").append("<div id='amigo'></div>");
+	$("#backgroundGame").append("<div id='player'></div>");
+	$("#backgroundGame").append("<div id='enemy1'></div>");
+	$("#backgroundGame").append("<div id='enemy2'></div>");
+	$("#backgroundGame").append("<div id='friend'></div>");
 
 }

@@ -23,7 +23,7 @@ body {
 }
 
 
-#fundoGame {
+#backgroundGame {
 	width:950px;
 	height:630px;
 	background-image:url(./imgs/fundo_game.jpg);
@@ -31,7 +31,7 @@ body {
 	border-style:solid;
 }
 
-#jogador {
+#player {
 	width:256px;
 	height:66px;
 	position:absolute;
@@ -41,7 +41,7 @@ background-image:url(./imgs/apache.png);
 
 }
 
-#inimigo1 {
+#enemy1 {
 	width: 256px;
 	height: 66px;
 	position: absolute;
@@ -51,7 +51,7 @@ background-image:url(./imgs/apache.png);
 	
 }
 
-#inimigo2 {
+#enemy2 {
 	width: 165px;
 	height: 70px;
 	position: absolute;
@@ -60,7 +60,7 @@ background-image:url(./imgs/apache.png);
 	background-image: url(./imgs/inimigo2.png);
 }
 
-#amigo {
+#friend {
 	width: 44px;
 	height: 51px;
 	position: absolute;
@@ -69,7 +69,7 @@ background-image:url(./imgs/apache.png);
 	background-image:url(./imgs/amigo.png);
 }
 
-#inicio {
+#start {
 	width:350px;
 	height:200px;
 	background-color:#FFF;
