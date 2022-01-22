@@ -14,6 +14,8 @@ body {
 	background-image:url(./imgs/fundo.jpg);
 }
 
+
+
 #container{
 	width:950px;
 	height:auto;
@@ -21,6 +23,28 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 }
+
+#score {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+#energy {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
 
 
 #backgroundGame {
@@ -80,6 +104,28 @@ background-image:url(./imgs/apache.png);
 	padding:10px;
 
 }
+
+#bullet {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(./imgs/disparo.png);
+}
+
+#explosion1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosion2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
 .anima1 {
 	background-image:url(./imgs/helicoptero.png);
 	animation:play .5s steps(2) infinite;
@@ -134,6 +180,48 @@ background-image:url(./imgs/apache.png);
         -ms-animation: play2 .9s steps(12) infinite;
          -o-animation: play2 .9s steps(12) infinite;
 }
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(./imgs/amigo_morte.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
 
 @keyframes play2 {
 	from {background-position:0px;}
