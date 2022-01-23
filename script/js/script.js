@@ -127,6 +127,7 @@ function start() { // Inicio da função start()
                 
                 $("#friend").css("left",0);
                 score=score+100;
+                velocidade=velocidade+0.3;
                         
             }
     
@@ -224,7 +225,7 @@ function start() { // Inicio da função start()
                 
         }
         if (collision5.length>0) {
-		
+            
             saved = saved +1 
             repositionFriend();
             $("#friend").remove();
@@ -307,7 +308,7 @@ function start() { // Inicio da função start()
             
             if (endGame==false) {
             
-            $("#backgroundGame").append("<div id='friend' class='anima3'></div>");
+                $("#backgroundGame").append("<div id='friend' class='anima3'></div>");
             
             }
             
@@ -348,8 +349,28 @@ function start() { // Inicio da função start()
 			
 			$("#energy").css("background-image", "url(../assets/imgs/energia0.png)");
 			
-			//Game Over
+			gameOver()
 		}
 	
 	}
+
+    function gameOver() {
+        endGame=true;
+        
+        window.clearInterval(game.timer);
+        game.timer=null;
+        
+        $("#player").remove();
+        $("#enemy1").remove();
+        $("#enemy2").remove();
+        $("#friend").remove();
+        
+        $("#backgroundGame").append("<div id='end'></div>");
+        
+        $("#end").html("<h1> Game Over </h1><p>Sua pontuação foi: " + score + "</p>" + "<div id='reset' onClick=resetGame()><h3>Jogar Novamente</h3></div>");
+    }
+    function resetGame() {
+        $("#end").remove();
+        start();
+    }
 }    
